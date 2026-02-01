@@ -1,0 +1,12 @@
+var name="Rahul";
+console.log(name);
+var age= 18;
+console.log(age);
+const department="CSE";
+console.log(department);
+let tenthpercentage=90;
+console.log(tenthpercentage);
+let twelthpercentage=85;
+console.log(twelthpercentage);
+var maturity= true;
+console.log(maturity);
