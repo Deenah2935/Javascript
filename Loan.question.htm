@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x=Number(prompt("Enter age:"));
+        let y=Number(prompt("Enter income:"));
+        if (x>18 && y==300000){
+            alert("You are eligible for 30k loan");
+        }
+        else if(x>24 && y==600000){
+            alert("You are eligible for 60k loan");
+        }
+        else if(x>30 && y>= 1200000){
+            alert("You are eligible for 240k loan");
+        }
+        else{
+            alert("You are not eligible for loan")
+        }
+    </script>
+</body>
+</html>
