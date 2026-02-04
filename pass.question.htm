@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=prompt("Enter username");
+        let b=prompt("Enter password");
+
+        let Uupper=0, Ulower=0, Udigit=0;
+        let userValid= true;
+
+        if(a.length !==7){
+            userValid= false;
+        }
+        else{
+            for (let ch of a)
+        { if (ch >= 'A' && ch <= 'Z'){
+                Uupper++;
+        }else if (ch>='a' && ch <='z'){
+            Ulower++;
+        }else if(ch>= '0' && ch<='9'){
+            Udigit++;
+        }else{
+            userValid= false;
+        }}
+        if (!(Uupper === 1 && Ulower === 1 && Udigit ===5))
+        {userValid= false;}
+        }
+
+        let pLower = 0, pDigit = 0;
+let passwordValid = true;
+
+if (b.length !== 8) {
+    passwordValid = false;
+} else {
+    for (let ch of b) {
+        if (ch >= 'a' && ch <= 'z') {
+            pLower++;
+        } else if (ch >= '0' && ch <= '9') {
+            pDigit++;
+        } else {
+            passwordValid = false;
+        }
+    }
+
+    if (!(pLower >= 1 && pDigit >= 1)) {
+        passwordValid = false;
+    }
+}
+
+if (userValid && passwordValid) {
+    alert("Successful");
+} else {
+    alert("Invalid login credentials");
+}
+
+
+
+    </script>
+</body>
+</html>
